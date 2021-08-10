@@ -8,7 +8,7 @@ Run `npm install` to install the dependencies.
 
 ## Server Setup
 
-Run `npm run:start:server` to start the server.
+Run `npm run:start-server` to start the server.
 
 ## Development server
 
