@@ -1,0 +1,46 @@
+/* You can add global styles to this file, and also import other style files */
+
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.ql-tooltip {
+  display: none !important;
+}
+
+.ql-editor {
+  //   background: #673ab68f;
+  height: 80px;
+  border: 1px solid;
+  border-radius: 10px;
+  border-color: rgba(0, 0, 0, 0.12);
+}
+
+.ql-editor:focus {
+  border: 1px solid #ffd63f;
+  border-radius: 10px;
+  box-shadow: 0 0px 1px 1px #ffd63f;
+}
+
+.mention {
+  color: #ffd63f;
+  background-color: #673ab6;
+}
+
+.ql-mention-list-container {
+  width: 200px;
+  text-align: left;
+}
+
+.ql-mention-denotation-char {
+  display: none;
+}
+
+.mention > span {
+  margin: 0 6px;
+}

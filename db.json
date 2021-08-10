@@ -1,0 +1,25 @@
+{
+  "patients": [
+    {
+      "name": "Anil Patel",
+      "email": "Anilp220@gmail.com",
+      "age": 23,
+      "gender": "male",
+      "id": 1
+    },
+    {
+      "name": "asd",
+      "email": "Anilp220@gmail.com",
+      "age": 213,
+      "gender": "male",
+      "id": 2
+    },
+    {
+      "name": "dsfsdf",
+      "email": "asd@sdf.sdf",
+      "age": 23,
+      "gender": "male",
+      "id": 3
+    }
+  ]
+}

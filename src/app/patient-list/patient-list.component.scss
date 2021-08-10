@@ -1,0 +1,28 @@
+table {
+  width: 100%;
+}
+
+th.mat-sort-header-sorted {
+  color: black;
+}
+
+.container {
+  width: 75%;
+  margin: auto;
+}
+
+.export {
+  padding: 10px 0;
+  button {
+    float: right;
+    margin: 10px 0;
+  }
+  mat-form-field {
+    width: 50%;
+  }
+}
+
+.mat-row:hover {
+  background: aliceblue;
+  cursor: pointer;
+}

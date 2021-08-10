@@ -1,0 +1,30 @@
+<mat-card>
+    <mat-spinner *ngIf="isLoading"></mat-spinner>
+    <form (submit)="onSubmit(patientForm)" #patientForm="ngForm" *ngIf="!isLoading">
+        <mat-form-field>
+            <input matInput name="name" #inputName="ngModel" type="text" placeholder="Name" [(ngModel)]="name" required>
+            <mat-error *ngIf="inputName.invalid">Patient name is required.</mat-error>
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput name="email" #inputEmail="ngModel" type="email" placeholder="E-Mail" [(ngModel)]="email"
+                required>
+            <mat-error *ngIf="inputEmail.invalid">Valid email is required.</mat-error>
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput name="age" #inputAge="ngModel" type="number" min="0" max="99" [(ngModel)]="age"
+                placeholder="Age" required>
+            <mat-error *ngIf="inputAge.invalid">Patient age is required.</mat-error>
+        </mat-form-field>
+        <mat-form-field>
+            <mat-label>Gender</mat-label>
+            <select required name="gender" #inputGender="ngModel" [(ngModel)]="gender" matNativeControl required>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+            </select>
+            <mat-error *ngIf="inputGender.invalid">Patient gender is required.</mat-error>
+        </mat-form-field>
+        <div class="error" *ngIf="error">{{error}}</div>
+        <button mat-raised-button color="accent" type="submit" *ngIf="!isLoading">{{patientId ? 'Update' :
+            'Create'}}</button>
+    </form>
+</mat-card>
